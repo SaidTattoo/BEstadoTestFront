@@ -28,8 +28,8 @@ export class UserlistComponent implements OnInit {
   }
   getUser(user){
     let dialogRef = this.dialog.open(SeeComponent, {
-      height: '400px',
-      width: '600px',
+    
+      width: '400px',
       data:user
     });
   }

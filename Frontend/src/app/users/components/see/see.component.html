@@ -1,2 +1,10 @@
-<p>see works!</p>
-{{ data | json }}
+
+<h2>{{data.name}} {{data.lastName}}</h2>
+<mat-chip>{{data.email}}</mat-chip>
+
+<h3>mis hobbies:</h3>
+
+<div *ngFor="let items of data.hobbys">
+    {{items}}
+</div>
+
